@@ -18,8 +18,6 @@ def index():
 def index():
     return
 
-app.run(host='localhost', port=8080)
-
 if os.environ.get("APP_LOCATION") == "heroku":
     app.run(
         host="0.0.0.0",
