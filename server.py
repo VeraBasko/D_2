@@ -11,7 +11,7 @@ app = Bottle()
 
 @app.route('/fail')
 def index():
-    raise RuntimeError("There is an error!")
+    raise RuntimeError("Ошибка!")
     return
 
 @app.route('/success')
