@@ -4,7 +4,7 @@ from bottle import Bottle, request
 from sentry_sdk.integrations.bottle import BottleIntegration
 
 sentry_sdk.init(
-    dsn="https://615e9144b90f4db3bde501864352c1eb@o397304.ingest.sentry.io/5251658",
+    dsn=os.environ.get("SENTRY_SDK", "https://615e9144b90f4db3bde501864352c1eb@o397304.ingest.sentry.io/5251658"),
     integrations=[BottleIntegration()]
 )
 app = Bottle()
