@@ -16,7 +16,7 @@ def index():
 
 @app.route('/success')
 def index():
-    return
+    return "Hello World!"
 
 if os.environ.get("APP_LOCATION") == "heroku":
     app.run(
